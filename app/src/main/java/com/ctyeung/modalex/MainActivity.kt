@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onClickFragment() {
-
+        ModalFragment().show(this.supportFragmentManager, "hello")
     }
 
     fun onClickAlert() {
