@@ -27,6 +27,13 @@ A toast message with gravity set to top.
 
 <img width="200" src="https://user-images.githubusercontent.com/1282659/107152371-18799c80-692d-11eb-9c8d-ce62d04b1eba.png">
 
+### Snackbar 
+
+A Material design replacement of toast. \
+Default at the bottom like a toast; placement and style adjustable. 
+
+<img width="200" src="https://user-images.githubusercontent.com/1282659/107158343-00b31000-694f-11eb-9dfb-18f804195448.png"> <img width="200" src="https://user-images.githubusercontent.com/1282659/107158344-014ba680-694f-11eb-80b7-da926bd2ea39.png">
+
 
 # References
 
