@@ -21,6 +21,11 @@ See my theme exercise<sup>[2]</sup> for styling.
 
 ### DialogFragment
 
+### Toast
+
+A toast message with gravity set to top.
+<img width="200" src="https://user-images.githubusercontent.com/1282659/107152371-18799c80-692d-11eb-9c8d-ce62d04b1eba.png">
+
 
 # References
 
