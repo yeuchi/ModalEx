@@ -8,11 +8,13 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.provider.Settings
+import android.util.AttributeSet
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.WindowManager
 import android.widget.LinearLayout
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -21,6 +23,8 @@ import com.google.android.material.snackbar.Snackbar
 
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var txt_hello:TextView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -31,9 +35,13 @@ class MainActivity : AppCompatActivity() {
         (findViewById(R.id.btn_fragment) as MaterialButton).setOnClickListener{onClickFragment()}
         (findViewById(R.id.btn_toast) as MaterialButton).setOnClickListener{onClickToast()}
         (findViewById(R.id.btn_snackbar) as MaterialButton).setOnClickListener{onClickSnackBar()}
+
+        txt_hello = findViewById(R.id.txt_hello) as TextView
     }
 
     fun onClickSnackBar() {
+        txt_hello.announceForAccessibility("displaying SnackBar")
+
         val lp = LinearLayout.LayoutParams(
             LinearLayout.LayoutParams.WRAP_CONTENT,
             LinearLayout.LayoutParams.WRAP_CONTENT
@@ -46,16 +54,23 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onClickToast() {
+        txt_hello.announceForAccessibility("displaying Toast")
+
         val toast = Toast.makeText(this,"hello wolrd", Toast.LENGTH_LONG)
         toast.setGravity(Gravity.TOP, 10, 200)
         toast.show()
     }
 
     fun onClickFragment() {
+        txt_hello.announceForAccessibility("displaying Dialog fragment")
+
         ModalFragment().show(this.supportFragmentManager, "hello")
     }
 
     fun onClickAlert() {
+
+        txt_hello.announceForAccessibility("displaying Alert Dialog")
+
         /*
          * Try custom view !
          */
@@ -70,6 +85,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onClickService() {
+
+        txt_hello.announceForAccessibility("displaying custom view through window manager")
+
         /*
          * https://stackoverflow.com/questions/19846541/what-is-windowmanager-in-android
          */
