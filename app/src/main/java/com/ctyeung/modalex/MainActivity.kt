@@ -1,7 +1,6 @@
 package com.ctyeung.modalex
 
 import android.content.Context
-import android.content.DialogInterface
 import android.content.Intent
 import android.graphics.PixelFormat
 import android.net.Uri
@@ -11,11 +10,14 @@ import android.os.Handler
 import android.provider.Settings
 import android.view.Gravity
 import android.view.LayoutInflater
+import android.view.View
 import android.view.WindowManager
+import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.button.MaterialButton
+import com.google.android.material.snackbar.Snackbar
 
 
 class MainActivity : AppCompatActivity() {
@@ -32,7 +34,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onClickSnackBar() {
-
+        val lp = LinearLayout.LayoutParams(
+            LinearLayout.LayoutParams.WRAP_CONTENT,
+            LinearLayout.LayoutParams.WRAP_CONTENT
+        )
+        lp.setMargins(50, 0, 0, 0)
+        val root = findViewById(R.id.root) as View
+        val snackbar = Snackbar.make(root, "hello world", Snackbar.LENGTH_LONG)
+        snackbar.view.layoutParams = lp
+        snackbar.show()
     }
 
     fun onClickToast() {
