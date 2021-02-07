@@ -37,8 +37,12 @@ Default at the bottom like a toast; placement and style adjustable.
 
 # References
 
-1. StackOverflow: What is WindowManager in Android, Phan Van Linh, October 20, 2017
+1. StackOverflow: What is WindowManager in Android, Phan Van Linh, October 20, 2017 \
 https://stackoverflow.com/questions/19846541/what-is-windowmanager-in-android
 
-2. AndroidThemeEx, C.T. Yeung
+2. AndroidThemeEx, C.T. Yeung \
 https://github.com/yeuchi/AndroidThemeEx
+
+3. StackOverflow: How to fix the Snackbar height and position, Alexandr Larin and others, 2017 \
+https://stackoverflow.com/questions/41300937/how-to-fix-the-snackbar-height-and-position
+
