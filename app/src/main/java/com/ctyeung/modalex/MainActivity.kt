@@ -9,8 +9,10 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.provider.Settings
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.WindowManager
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.button.MaterialButton
@@ -34,7 +36,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onClickToast() {
-
+        val toast = Toast.makeText(this,"hello wolrd", Toast.LENGTH_LONG)
+        toast.setGravity(Gravity.TOP, 10, 200)
+        toast.show()
     }
 
     fun onClickFragment() {
@@ -42,6 +46,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onClickAlert() {
+        /*
+         * Try custom view !
+         */
        val builder = AlertDialog.Builder(this)
             .setMessage("messge to the world")
             .setCancelable(false)
