@@ -21,6 +21,11 @@ See my theme exercise<sup>[2]</sup> for styling.
 
 ### DialogFragment
 
+A step up from the alertDialog is DialogFragment. \
+It has the dark translucent background but no default click handler.
+
+<img with="200" src="https://user-images.githubusercontent.com/1282659/107158997-1fb3a100-6953-11eb-9713-6ebc24f3ed25.png">
+
 ### Toast
 
 A toast message with gravity set to top.
