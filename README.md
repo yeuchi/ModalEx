@@ -2,7 +2,7 @@
 
 ### Floating View -> WindowManager
 
-Insert a top most view directly via WindowManager; thanks to Phan's code snipet in StackOverflow. \ 
+Insert a top most view directly via WindowManager; thanks to Phan<sup>[1]</sup>'s code snipet in StackOverflow.  
 User permission is required.
 
 
