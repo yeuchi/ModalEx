@@ -33,6 +33,24 @@
         android:id="@+id/btn_alert"
         android:text="alertDialog"/>
 
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_fragment"
+        android:text="fragment"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_toast"
+        android:text="toast"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_snackbar"
+        android:text="snackbar"/>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

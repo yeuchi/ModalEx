@@ -1,6 +1,7 @@
 package com.ctyeung.modalex
 
 import android.content.Context
+import android.content.DialogInterface
 import android.content.Intent
 import android.graphics.PixelFormat
 import android.net.Uri
@@ -10,6 +11,7 @@ import android.os.Handler
 import android.provider.Settings
 import android.view.LayoutInflater
 import android.view.WindowManager
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.button.MaterialButton
 
@@ -20,15 +22,34 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         requestPermission()
-        val btn_service = findViewById(R.id.btn_service) as MaterialButton
-        btn_service.setOnClickListener{onClickService()}
+        (findViewById(R.id.btn_service) as MaterialButton).setOnClickListener{onClickService()}
+        (findViewById(R.id.btn_alert) as MaterialButton).setOnClickListener{onClickAlert()}
+        (findViewById(R.id.btn_fragment) as MaterialButton).setOnClickListener{onClickFragment()}
+        (findViewById(R.id.btn_toast) as MaterialButton).setOnClickListener{onClickToast()}
+        (findViewById(R.id.btn_snackbar) as MaterialButton).setOnClickListener{onClickSnackBar()}
+    }
 
-        val btn_alertDialog = findViewById(R.id.btn_alert) as MaterialButton
-        btn_service.setOnClickListener{onClickAlert()}
+    fun onClickSnackBar() {
+
+    }
+
+    fun onClickToast() {
+
+    }
+
+    fun onClickFragment() {
+
     }
 
     fun onClickAlert() {
+       val builder = AlertDialog.Builder(this)
+            .setMessage("messge to the world")
+            .setCancelable(false)
+            .setTitle("title")
+            .setPositiveButton("Alert" ) {dialogInterface, i ->
+            }
 
+        builder.create().show()
     }
 
     fun onClickService() {
