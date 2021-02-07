@@ -15,7 +15,7 @@ User permission is required.
 ### AlertDialog
 
 Basic alertDialog, nice click anywhere feature by default.  
-See my theme exercise for styling.  
+See my theme exercise<sup>[2]</sup> for styling.  
 
 <img width="200" src="https://user-images.githubusercontent.com/1282659/107152033-655c7380-692b-11eb-83ca-faef7bbd01a1.png"> 
 
@@ -26,3 +26,6 @@ See my theme exercise for styling.
 
 1. StackOverflow: What is WindowManager in Android, Phan Van Linh, October 20, 2017
 https://stackoverflow.com/questions/19846541/what-is-windowmanager-in-android
+
+2. AndroidThemeEx, C.T. Yeung
+https://github.com/yeuchi/AndroidThemeEx
